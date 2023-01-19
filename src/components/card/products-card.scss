@@ -17,6 +17,37 @@
     background-color: $default-blue;
     -webkit-clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
     clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    cursor: pointer;
+
+    &-selected {
+      background-color: $hover-pink;
+
+      .card_weight {
+        background: $hover-pink;
+      }
+    }
+
+    &-disabled {
+      background-color: $dark-gray;
+      cursor: not-allowed;
+
+      .card {
+        &_wrapper {
+          opacity: 0.5;
+        }
+
+        &_subtitle,
+        &_description,
+        &_wrapper {
+          color: $dark-gray;
+        }
+
+        &_weight {
+          background: $dark-gray;
+          color: #fff;
+        }
+      }
+    }
   }
 
   &_container {

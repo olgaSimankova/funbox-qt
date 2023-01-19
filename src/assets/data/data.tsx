@@ -9,7 +9,7 @@ export const PRODUCTS_DATA = [
     weight: 0.5,
     id: 0,
     selected: false,
-    disabled: false,
+    disabled: true,
   },
   {
     name: "Нямушка",

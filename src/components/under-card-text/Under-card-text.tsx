@@ -3,11 +3,12 @@ import { IProductData } from "../../types/types";
 
 interface IUnderCardTextProps {
   product: IProductData;
+  selected: boolean;
   setSelected: Dispatch<SetStateAction<boolean>>;
 }
 
 export const UnderCardText: React.FC<IUnderCardTextProps> = (props) => {
-  const { product, setSelected } = props;
+  const { product, selected, setSelected } = props;
   const renderMessage = () => {
     if (product.disabled) {
       return (
@@ -15,13 +16,13 @@ export const UnderCardText: React.FC<IUnderCardTextProps> = (props) => {
       );
     }
 
-    if (product.selected) {
+    if (selected) {
       return <p className="card_under-selected">{product.description}</p>;
     }
 
     return (
       <>
-        Чего сидишь? Порадуй котэ,{" "}
+        Чего сидишь? Порадуй котэ,
         <button className="card_button" type="button">
           <span
             onClick={() => setSelected(() => !product.selected)}
