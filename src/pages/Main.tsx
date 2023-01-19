@@ -1,5 +1,5 @@
 import React from "react";
-import { ProductsContainer } from "../components/cards-list/Products-container";
+import { ProductsContainer } from "../components/cards-list/cards-list";
 import { MAIN_HEADER } from "../types/constants";
 
 const data = JSON.parse;

@@ -91,4 +91,24 @@
       font-size: 2.1rem;
     }
   }
+
+  &_under {
+    @include font(1.3rem, 400, 1.5rem);
+    text-align: center;
+    color: #fff;
+
+    &-disabled {
+      color: $disabled-yellow;
+    }
+  }
+
+  &_button {
+    color: $default-blue;
+    border: none;
+    padding: 0 0.2rem;
+
+    &-dashed {
+      border-bottom: 0.1rem dashed $default-blue;
+    }
+  }
 }
