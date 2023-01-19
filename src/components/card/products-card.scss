@@ -28,22 +28,23 @@
     }
 
     &-disabled {
-      background-color: $dark-gray;
+      background-color: $disabled-gray;
       cursor: not-allowed;
 
       .card {
-        &_wrapper {
+        &_container {
           opacity: 0.5;
         }
 
-        &_subtitle,
-        &_description,
-        &_wrapper {
-          color: $dark-gray;
+        &_subTitle,
+        &_title,
+        &_info_text,
+        &_container {
+          color: $disabled-gray;
         }
 
         &_weight {
-          background: $dark-gray;
+          background: $disabled-gray;
           color: #fff;
         }
       }
