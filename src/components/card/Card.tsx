@@ -7,7 +7,7 @@ import { IProductData } from "../../types/types";
 import catImg from "../../assets/img/cat.png";
 import { UnderCardText } from "../under-card-text/Under-card-text";
 
-export const ProductCard: React.FC<IProductData> = (product) => {
+export const Card: React.FC<IProductData> = (product) => {
   const [selected, setSelected] = useState(product.selected);
   const [subTitle, setSubTitle] = useState(DEFAULT_CARD_SUBTITLE);
 

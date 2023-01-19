@@ -1,22 +1,40 @@
 @import "./vars.scss";
 @import "./fonts";
 @import "../components/cards-list/card-list.scss";
-@import "../components/card/products-card.scss";
+@import "../components/card/card.scss";
 
-.main_wrapper {
+.main {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  background: url("../assets/img/Pattern@2x.png");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  background: center / cover no-repeat url("../assets/img/Pattern@2x.png");
+  padding: 3.6rem 0.5rem;
 
-.main_heading {
-  font-family: "Exo2.0";
-  font-size: 36px;
-  line-height: 44px;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 0px 1px 1px #000000;
+  @media (max-width: 100rem) {
+    height: 100%;
+  }
+
+  &_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 5e-5) 49.88%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
+
+  &_heading {
+    font-family: "Exo2.0";
+    @include font(3.6rem, 400, 4.4rem);
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #000000;
+    position: inherit;
+    z-index: 5;
+  }
 }

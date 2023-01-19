@@ -1,14 +1,14 @@
 import React from "react";
 import { PRODUCTS_DATA } from "../../assets/data/data";
-import { ProductCard } from "../card/Product-card";
+import { Card } from "../card/Card";
 
 const products = PRODUCTS_DATA;
 
-export const ProductsContainer = () => {
+export const CardsList = () => {
   return (
     <div className="products_container">
       {products.map((productData) => (
-        <ProductCard {...productData} />
+        <Card {...productData} />
       ))}
     </div>
   );

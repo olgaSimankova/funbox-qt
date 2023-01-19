@@ -38,8 +38,7 @@
 
         &_subTitle,
         &_title,
-        &_info_text,
-        &_container {
+        &_info_text {
           color: $disabled-gray;
         }
 
@@ -48,6 +47,10 @@
           color: #fff;
         }
       }
+    }
+    @media (max-width: $tablet-width) {
+      width: 29rem;
+      height: 45rem;
     }
   }
 

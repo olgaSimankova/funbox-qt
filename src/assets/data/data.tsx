@@ -9,7 +9,7 @@ export const PRODUCTS_DATA = [
     weight: 0.5,
     id: 0,
     selected: false,
-    disabled: true,
+    disabled: false,
   },
   {
     name: "Нямушка",
@@ -20,7 +20,7 @@ export const PRODUCTS_DATA = [
     comment: "",
     weight: 2,
     id: 1,
-    selected: false,
+    selected: true,
     disabled: false,
   },
   {
@@ -33,6 +33,6 @@ export const PRODUCTS_DATA = [
     weight: 5,
     id: 2,
     selected: false,
-    disabled: false,
+    disabled: true,
   },
 ];
